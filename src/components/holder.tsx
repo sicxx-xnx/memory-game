@@ -7,26 +7,13 @@ import { giphyresponseobj } from "../utili/convertobj";
 import { Content } from "./content";
 
 export function Holder(){
-const [score, setScore] = useState<Number>(0) 
-const[gametype,setGameType] = useState<string>("Food") 
+const [score, setScore] = useState<number>(0) 
+const[gametype,setGameType] = useState<string>("food") 
 const [images, setImages] = useState<imageobj[]>([])
 
 useEffect(()=>{
 setImages([])  
-//     gameTypeOption[gametype].forEach((element:string) => {
-//       const apiCall =  async () => {
-//         const imagePromise = await fetch(apifetchstring + element)    
-//          const image = await imagePromise.json()
-//          return image } 
-//          apiCall().then((res)=>{const response:imageobj = giphyresponseobj(res)
-//           setImages(prev=>[...prev,response])
-//         })
-//  });
-
-
-for (const key in gameTypeOption) {
- if (key.toLowerCase() === gametype.toLowerCase()) {
-    gameTypeOption[key].forEach((element:string) => {
+    gameTypeOption[gametype].forEach((element:string) => {
       const apiCall =  async () => {
         const imagePromise = await fetch(apifetchstring + element)    
          const image = await imagePromise.json()
@@ -34,15 +21,13 @@ for (const key in gameTypeOption) {
          apiCall().then((res)=>{const response:imageobj = giphyresponseobj(res)
           setImages(prev=>[...prev,response])
         })
- });     
-}        
-}
+ });
 
 },[gametype])
 return (
 <>
 <Header/>
-<Content images={images} />
+<Content images={images} score = {score} setGameType = {(e:string)=>setGameType(e)} />
 </>    
 )    
 }

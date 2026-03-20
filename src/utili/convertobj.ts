@@ -4,7 +4,7 @@ import type { imageobj } from "../types/image";
 export function giphyresponseobj (res:apiresponsegiphy):imageobj{
 let image:imageobj = {
 url: res.data.images.original.url,
-id: Number(res.data.id),
+id: res.data.id,
 title:res.data.title
 
 } 

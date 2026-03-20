@@ -136,6 +136,21 @@
     }
   }
 
+
+
+.gamecard{
+  width: 100px;
+  height: 100px;
+  background-color: var(--accent-bg);
+  border: 2px solid var(--accent-border);
+  border-radius: 8px;  
+}
+
+
+
+
+
+
   @media (max-width: 1024px) {
     margin-top: 20px;
     flex-wrap: wrap;

@@ -1,5 +1,5 @@
 export interface imageobj {
 url: string
-id : number
+id : string 
 title: string    
 }

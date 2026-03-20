@@ -5,7 +5,7 @@ data: {
             url: string
         }
     },
-    id: number | String,
+    id: string,
     title: string
 } 
 }
