@@ -5,7 +5,7 @@ import { Holder } from './components/holder'
 
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+
 <Holder/>
-  </StrictMode>,
+
 )

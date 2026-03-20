@@ -1,5 +1,5 @@
 
-const gameTypeOption: any = [
+const gameTypeOption: any = 
     {food:[
         "cheeseburger",
         "Pizza",
@@ -11,8 +11,8 @@ const gameTypeOption: any = [
         'tacos',
         'shrimp',
         'ramen'
-    ]},
-    {pokemon:[
+    ],
+    pokemon:[
         "Pikachu",
         "Charizard",
         "Bulbasaur",
@@ -23,8 +23,8 @@ const gameTypeOption: any = [
         "Snorlax",
         "Lucario",
         "Jigglypuff"
-]},
-    {tvShows:[
+],
+    tvShows:[
         "Breaking Bad",
         "Stranger Things",
         "Game of Thrones",
@@ -41,6 +41,6 @@ const gameTypeOption: any = [
         "Rick and Morty",
         "House of the Dragon"
 ]}
-]
+
 
 export {gameTypeOption}
