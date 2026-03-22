@@ -27,7 +27,7 @@ setImages([])
 return (
 <>
 <Header/>
-<Content images={images} score = {score} setGameType = {(e:string)=>setGameType(e)} />
+<Content images={images} score = {score} setImages = {setImages} setScore={setScore} setGameType = {(e:string)=>setGameType(e)} />
 </>    
 )    
 }
